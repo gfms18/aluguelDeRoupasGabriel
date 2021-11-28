@@ -43,7 +43,7 @@ public class ManipulandoDatas {
 		//Primeira data
 		Calendar cal1 = Calendar.getInstance();
 		cal1.setTime(primeiraData);
-		//Segunda data
+		//Segunda data 
 		Calendar cal2 = Calendar.getInstance();
 		cal2.setTime(segundaData);
 		return (cal1.get(DAY_OF_MONTH) == cal2.get(DAY_OF_MONTH))
