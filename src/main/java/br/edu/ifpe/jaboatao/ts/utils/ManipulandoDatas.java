@@ -12,7 +12,7 @@ public class ManipulandoDatas {
 	
 
 
-	public static Date novaDataComDiferencaDeDias(int dias, Date data) {
+	public static Date novaDataComDiferencaDias(int dias, Date data) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(data);
 		calendar.add(DAY_OF_MONTH, dias);
@@ -23,7 +23,7 @@ public class ManipulandoDatas {
 	
 	
 	public static Date novaDataComDiferencaDeDias(int dias) {
-		return novaDataComDiferencaDeDias(dias, new Date());
+		return novaDataComDiferencaDias(dias, new Date());
 	}	
 	
 	public static Date retornarData(int dia, int mes, int ano){
@@ -39,7 +39,7 @@ public class ManipulandoDatas {
 
 	
 	
-	public static boolean boDatasIguais(Date primeiraData, Date segundaData) {
+	public static boolean bolDatasIguais(Date primeiraData, Date segundaData) {
 		//Primeira data
 		Calendar cal1 = Calendar.getInstance();
 		cal1.setTime(primeiraData);
@@ -51,7 +51,7 @@ public class ManipulandoDatas {
 				&& (cal1.get(YEAR) == cal2.get(YEAR));
 	}
 	
-	 static boolean boDiaSemana(Date data, int diaSemana) {
+	 static boolean bolDiaSemana(Date data, int diaSemana) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(data);
 		
